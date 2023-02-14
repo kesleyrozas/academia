@@ -6,6 +6,7 @@ import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -30,7 +31,7 @@ public class Pessoa {
     private String sexo;
 
     @Column(name = "dtnascimento")
-    private String nascimento;
+    private Date nascimento;
 
     @Column(name = "peso")
     private Double peso;
