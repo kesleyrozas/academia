@@ -24,7 +24,7 @@ public class Pessoa {
     @Column(name = "sexo", length = 1)
     private String sexo;
 
-    @Column(name = "dtNascimento")
+    @Column(name = "dtnascimento")
     private String nascimento;
 
     @Column(name = "peso")
@@ -51,7 +51,7 @@ public class Pessoa {
     @Column(name = "turno")
     private String turno;
 
-    @Column(name = "tipoCadastro", length = 1)
+    @Column(name = "tipocadastro", length = 1)
     private Integer tipoCadastro;
 
 }

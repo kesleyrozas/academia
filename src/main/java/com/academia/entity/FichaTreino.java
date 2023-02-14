@@ -13,7 +13,7 @@ import java.util.List;
 @Entity(name="ficha_treino")
 public class FichaTreino {
 
-    @Id
+    @javax.persistence.Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_ficha_treino", nullable = false)
     private Long id;
