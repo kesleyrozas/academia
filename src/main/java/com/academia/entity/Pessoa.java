@@ -2,8 +2,10 @@ package com.academia.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.Length;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
 
 @Getter
 @Setter
@@ -16,9 +18,12 @@ public class Pessoa {
     private Long id;
 
     @Column(name = "nome", length = 80, nullable = false)
+    @NotEmpty(message = "O nome deverá ser informado!")
+    @Length(min = 5, max = 80, message = "O nome devéra ter de 5 a 80 caracteres")
     private String nome;
 
     @Column(name = "cpf", length = 11, nullable = false)
+    @NotEmpty(message = "O cpf deverá ser informado!")
     private String cpf;
 
     @Column(name = "sexo", length = 1)
