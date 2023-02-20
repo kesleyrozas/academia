@@ -23,7 +23,8 @@ public class FichaTreino {
     @JoinColumn(name="id_pessoa")
     private Pessoa pessoa;
 
-    @OneToMany(mappedBy = "fichaTreino", fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name="id_exercicio")
     private List<Exercicio> exercicios;
 
     @Column(name="numero")

@@ -35,8 +35,4 @@ public class Exercicio {
     @Column(name = "equipamento", length = 80)
     private String equipamento;
 
-    @ManyToOne
-    @JoinColumn(name = "id_ficha_treino")
-    private FichaTreino fichaTreino;
-
 }
